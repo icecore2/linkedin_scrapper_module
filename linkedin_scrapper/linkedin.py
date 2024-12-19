@@ -10,8 +10,8 @@ import urllib3
 from bs4 import BeautifulSoup
 from pandas import DataFrame
 
-from model import BaseJobData
-from linkedin_scrapper.utils import cache_data
+from .model import BaseJobData
+from .utils import cache_data
 
 HEADERS = {
     'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'

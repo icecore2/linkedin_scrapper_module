@@ -1,6 +1,6 @@
 from setuptools import setup, find_packages
 
-# create a setup for a module
+
 setup(
     author='Dmitry Banny',
     author_email='dima.benny88@gmail.com',
@@ -9,10 +9,10 @@ setup(
     packages=find_packages(
         include=['linkedin_scrapper']
     ),
-    requires=[
-        'requests'
-        'beautifulsoup4'
-        'urllib3'
-        'pandas'
+    install_requires=[
+        'requests',
+        'beautifulsoup4',
+        'urllib3',
+        'pandas',
     ]
 )
