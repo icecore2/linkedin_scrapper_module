@@ -12,6 +12,7 @@ class BaseJobData:
     created_at: Optional[str] = None
     description: Optional[str] = None
     closing_date: Optional[str] = None
+    category: Optional[str] = None
     remote: Optional[bool] = None
 
     def to_dict(self):
