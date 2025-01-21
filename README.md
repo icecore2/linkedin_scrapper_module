@@ -16,7 +16,7 @@ A powerful Python module for scraping job listings from LinkedIn with customizab
 Install the module using pip:
 
 ```bash
-pip install linkedin-scrapper-module
+pip install git+https://github.com/icecore2/linkedin_scrapper_module.git
 ```
 
 ## Usage
