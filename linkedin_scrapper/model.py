@@ -8,7 +8,7 @@ class BaseJobData:
     title: str
     company: str
     location: str
-    job_link: str
+    link: str
     created_at: Optional[str] = None
     description: Optional[str] = None
     closing_date: Optional[str] = None
