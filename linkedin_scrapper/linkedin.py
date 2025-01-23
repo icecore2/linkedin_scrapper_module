@@ -49,7 +49,7 @@ class LinkedInScraper:
 
         return urlunparse(new_parsed)
 
-    def get_new_jobs_data(self, cached=True):
+    def get_new_jobs_data(self, cached=False):
         response = None
         
         while True:
@@ -59,8 +59,7 @@ class LinkedInScraper:
 
             if response.status_code == 429:
                 logging.error(f"Failed to retrieve data from {new_url}. Status code: {response.status_code}")
-                sleep(1)
-                response = self.session.get(new_url)
+                break
                 
             soup = BeautifulSoup(response.text, 'html.parser')
             jobs = soup.find_all('div', class_='base-card')
