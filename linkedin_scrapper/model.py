@@ -20,3 +20,6 @@ class BaseJobData:
 
     def to_json(self):
         return json.dumps(self.to_dict())
+
+    def model_dump(self, exclude=None):
+        return {key: value for key, value in self.__dict__.items() if not key.startswith("_") and key not in exclude}
