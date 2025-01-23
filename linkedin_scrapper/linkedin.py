@@ -86,7 +86,7 @@ class LinkedInScraper:
                             title=title,
                             company=company,
                             location=location,
-                            job_link=job_link,
+                            link=job_link,
                             created_at=date_posted
                         )
                     )
